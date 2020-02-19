@@ -1,94 +1,212 @@
-/* Style sheet created by: Arpita Patel 5994 */
+	/* Style sheet created by: Arpita Patel 5994 */
 
 
-body {
-	background-color: #FFFF99;
+	body {
+		background-color: #FFFF99;
+		
+	}
+	img{
+		max-width: 100%;
+	}
+
+	/*Style for mobile Layout */
+
+	#container {
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;	
+	}
+
+	header {
+		background-color: #FFFFFF;
+		margin-top: 0.2em;
+		border-radius: 0.5em;
+		text-align: center;
+		
+	}
+	nav {
+		font-family: Georgia,"Times New Roman",serif;
+		font-size: 1.25em;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	nav ul {
+		padding: 0;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+
+	nav li {
+		background-color: #009933;
+		border-radius: 2em;
+		list-style-type: none;
+		margin: 0.3em;
+		padding: 0.4em;	
+	}
+
+	nav li a {
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+	.mobile {
+		display: inline;
+		
+	}
+	.desktop { 
+		display: none;
+
+		
+	}
+
+	main {
+		display: block;
+		font-family: Verdana, Arial, sans-serif;
+		font-size: 1em;
+		margin-top: 0.5em;
+		padding: 1em;
+		border-radius: 1em;
+		background-color: #FFFFFF;
+		border-top: solid 0.2em #009933;
+		border-bottom: solid 0.2em #009933;
+	}
+
+	footer {
+		font-size: .70em;
+		text-align: center;
+		margin-top: 2em;	
+	}
+
+	.tablet{
+		display: none;
+	}
+
+	.equip {
+		display: none;
+	}
+
+	@media only screen and (min-width: 660px) {
+
+	nav li {
+		display: inline;
+		float: left;	
+		margin-left: 1%;
+		margin-right: 1%;
+		padding-left: 0;
+		padding-right: 0;
+		width: 18%;
+		white-space: nowrap;
+	}
+	main{
+		clear: left;
+		margin-top: 4em;
+	}
+	.mobile{
+		display: none;
+	}
+	.desktop { 
+		display: inline;
+
+	}
+	.equip { 
+		display: inline;
+		float: left; 
+		margin-right: 1.5em;
+	}
+	.items {
+		display: block
+		list-style-position: inside;
+		margin-bottom: 5em;
+	}
+
+	.tablet { 
+		display: block;	
+	}
+
+	dt {
+		font-weight: bold;
+		margin-top: 0.7em; 
+	}
 	
-}
-img{
-	max-width: 100%;
+
 }
 
-/*Style for mobile Layout */
-
-#container {
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;	
-}
-
-header {
-	background-color: #FFFFFF;
-	margin-top: 0.2em;
-	border-radius: 0.5em;
-	text-align: center;
+@media only screen and (min-width: 830px) { 
+	#container { 
+		width: 80%; 
+		
+	}
 	
-}
-nav {
-	font-family: Georgia,"Times New Roman",serif;
-	font-size: 1.25em;
-	font-weight: bold;
-	text-align: center;
-}
-
-nav ul {
-	padding: 0;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-nav li {
-	background-color: #009933;
-	border-radius: 2em;
-	list-style-type: none;
-	margin: 0.3em;
-	padding: 0.4em;	
-}
-
-nav li a {
-	color: #FFFFFF;
-	text-decoration: none;
-}
-.mobile {
-	display: inline;
+	nav ul {
+		margin: 0;
+		padding-left: 0.50%;
+		padding-right: 0.50%;
+	}
 	
-}
-.desktop { 
-	display: none;
-
+	nav li {
+		border-radius: 0;
+		border-top: solid #000000;
+		border-bottom: solid #000000; 
+		margin-left: 0; 
+		margin-right: 0; 
+		padding: 0; 
+		width: 20%;
+	}
 	
+	nav li a {
+		display: inline-block; 
+		display: inline-block; 
+		padding: 0.7em;	
+	}
+	
+	nav li a:link {
+		color: #FFFFFF; 
+		}
+		
+	nav li a:visited {
+		color: #FFFF99; 
+	}
+	nav li a:hover {
+		color: #FFFF00; 
+		fontstyle: italic;
+	}
+	nav li a:active {
+		color: #6600CC; 
+		}
+	
+	body {
+		background: -moz-lineargradient(#FFFFFF, #FFFF99);   /* Firefox */ 
+		background: -o-linear-gradient(#FFFFFF, #FFFF99);  /* Opera */ 
+		background: -webkit-lineargradient(#FFFFFF, #FFFF99);/* Chrome, Safari */ 
+		background: linear-gradient(#FFFFFF, #FFFF99);
+		background-attachment: fixed;
 }
-
-main {
-	display: block;
-	font-family: Verdana, Arial, sans-serif;
-	font-size: 1em;
-	margin-top: 0.5em;
-	padding: 1em;
-	border-radius: 1em;
-	background-color: #FFFFFF;
-	border-top: solid 0.2em #009933;
-	border-bottom: solid 0.2em #009933;
-}
-
-footer {
-	font-size: .70em;
-	text-align: center;
-	margin-top: 2em;	
-}
-
-.tablet{
-	display: none;
-}
-
-.equip {
-	display: none;
-}
-
-
-
-
-
 
 	
+	main { 
+		border-style: none;
+		box-shadow: 0.5em 0.5em 0.5em #404040;
+		margin-bottom: 1em;
+		margin-top: 1em; 
+	
+	}
+	
+	main p {
+		padding-left: 0.5em;
+		padding-right: 0.5em; 
+	}
+	
+	.items {
+		margin-bottom: 6em;
+	}
+
+
+}
+
+
+
+
+
+
+		
 
